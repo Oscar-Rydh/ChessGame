@@ -3,12 +3,12 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-		ChessGame game = new ChessGame();
+		ChessController game = new ChessController();
 		Scanner scan = new Scanner(System.in);
 		game.printBoard();
 		while(true)
 		{
-			game.putPiece(scan.nextInt(), scan.nextInt(), scan.nextInt(), scan.nextInt());
+			game.makeMove(scan.nextInt(), scan.nextInt(), scan.nextInt(), scan.nextInt());
 			game.printBoard();
 		}
 	}
